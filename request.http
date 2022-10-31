@@ -1,0 +1,18 @@
+###
+GET http://localhost:3050/delitos HTTP/1.1
+
+###
+GET http://localhost:3050/delitos/10 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3050/delitos HTTP/1.1
+Content-Type: application/json
+
+{
+  "tipo_delito": "Asalto a transeunte",
+  "direccion": "Arbolitos 1ra seccion",
+  "descripcion": "joven asalta a su compañero de trabajo",
+  "coor_a": 22,
+  "coor_b": -100
+}
